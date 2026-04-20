@@ -1,6 +1,6 @@
-# 🌑 V.A.N.E. — Visual Analysis & Network Entity
+# 🌑 V.A.N.E. — Virtual Assistant & Network Entity
 
-**V.A.N.E.**, abreviação de Visual Analysis & Network Entity (Análise visual e entidade de rede), é uma assistente virtual aprimorada para atender as necessidades humanas de forma semelhante a uma assistente pessoal. Ela é um sistema modular de inteligência sentinela, projetado para operar inicialmente em ambientes Linux, integrando visão computacional, memória persistente de longo prazo e um motor de temperamento dinâmico que evolui conforme a interação com o usuário.
+**V.A.N.E.**, abreviação de Virtual Assistant & Network Entity (Análise visual e entidade de rede), é uma assistente virtual aprimorada para atender as necessidades humanas de forma semelhante a uma assistente pessoal. Ela é um sistema modular de inteligência sentinela, projetado para operar inicialmente em ambientes Linux, integrando visão computacional, memória persistente de longo prazo e um motor de temperamento dinâmico que evolui conforme a interação com o usuário.
 
 ---
 
