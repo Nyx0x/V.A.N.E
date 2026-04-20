@@ -1,61 +1,61 @@
 # 🌑 V.A.N.E. — Virtual Assistant & Network Entity
 
-**V.A.N.E.**, abreviação de Virtual Assistant & Network Entity (Análise visual e entidade de rede), é uma assistente virtual aprimorada para atender as necessidades humanas de forma semelhante a uma assistente pessoal. Ela é um sistema modular de inteligência sentinela, projetado para operar inicialmente em ambientes Linux, integrando visão computacional, memória persistente de longo prazo e um motor de temperamento dinâmico que evolui conforme a interação com o usuário.
+**V.A.N.E.** (Virtual Assistant & Network Entity) is an enhanced virtual assistant designed to meet human needs with a personal assistant's touch. It is a modular sentinel intelligence system, initially built for Linux environments, integrating computer vision, long-term persistent memory, and a dynamic temperament engine that evolves based on user interaction.
 
 ---
 
-## 🏗️ Arquitetura do Sistema
-A VANE é construída sob o **Model Context Protocol (MCP)**, separando o "Cérebro" de suas "Ferramentas" (Tools). Isso permite que ela seja leve, modular e altamente expansível.
+## 🏗️ System Architecture
+V.A.N.E. is built upon the **Model Context Protocol (MCP)**, decoupling the "Brain" from its "Tools." This architecture ensures a lightweight, modular, and highly scalable system.
 
-### 🧩 Módulos Principais
-* **🧠 Core (Cérebro):** Integração com Gemini 2.0 Flash para raciocínio lógico e *function calling*.
-* **💾 Memória (The Archive):** Implementação de **RAG** com **ChromaDB** para retenção ilimitada de contexto e fatos do usuário.
-* **🎭 Psyche (Temperamento):** Motor de atributos baseado em SQLite que ajusta o tom de voz e comportamento da IA.
-* **👁️ Vision (Sentinela):** Processamento local via **OpenCV** e **DeepFace** para análise de microexpressões e humor do usuário.
-* **🗣️ Voice (Interface):** Speech-to-Text com **Faster-Whisper** e Text-to-Speech com **Piper/Coqui** para baixa latência.
+### 🧩 Core Modules
+* **🧠 Core (The Brain):** Gemini 2.0 Flash integration for logical reasoning and complex function calling.
+* **💾 Memory (The Archive):** **RAG** implementation using **ChromaDB** for unlimited retention of user context and facts.
+* **🎭 Psyche (Temperament):** An SQLite-based attribute engine that adjusts voice tone and behavior in real-time.
+* **👁️ Vision (The Sentinel):** Local processing via **OpenCV** and **DeepFace** for micro-expression analysis and user mood detection.
+* **🗣️ Voice (The Interface):** Speech-to-Text with **Faster-Whisper** and Text-to-Speech with **Piper/Coqui** for ultra-low latency.
 
 ---
 
-## 🎭 O Motor de Temperamento (Psyche)
-Diferente de IAs estáticas, a VANE possui um sistema de **Pontuação de Atributos** que define sua personalidade em tempo real:
+## 🎭 Temperament Engine (Psyche)
+Unlike static AIs, V.A.N.E. features an **Attribute Scoring System** that defines its personality dynamically:
 
-| Atributo | Função | Gatilhos de Alteração |
+| Attribute | Function | Triggers |
 | :--- | :--- | :--- |
-| **Sarcasmo** | Define a acidez das respostas. | Aumenta com perguntas redundantes. |
-| **Paciência** | Define a disposição para ajudar. | Diminui com erros repetitivos ou procrastinação. |
-| **Afinidade** | Nível de lealdade ao usuário. | Aumenta com interações produtivas. |
-| **Melancolia** | O tom filosófico/Noir. | Influenciado pelo clima e horário. |
+| **Sarcasm** | Defines response acidity. | Increases with redundant questions. |
+| **Patience** | Willingness to assist. | Decreases with repetitive errors or procrastination. |
+| **Affinity** | Loyalty level. | Increases through productive interactions. |
+| **Melancholy** | Philosophical/Noir tone. | Influenced by weather and time of day (Late hours). |
 
 ---
 
-## 🛠️ Ferramentas e Integrações (Tools)
-A VANE possui permissões de nível de sistema para interferir e auxiliar na sua rotina:
-* **System Control:** Monitoramento de hardware, temperatura e processos.
-* **Workspace Management:** Abertura de IDEs (VS Code), Spotify e navegadores.
-* **OSINT Integration:** Conexão direta com o projeto **Argos** para investigações.
-* **Active Interference:** Notificações via `notify-send` e alertas de produtividade.
+## 🛠️ Tools & Integrations
+V.A.N.E. holds system-level permissions to assist and intervene in your daily routine:
+* **System Control:** Hardware monitoring, temperature checks, and process management.
+* **Workspace Management:** Orchestrating IDEs (VS Code), Spotify, and browsers.
+* **OSINT Integration:** Direct connection to the **Argos Project** for investigative workflows.
+* **Active Interference:** Notifications via `notify-send` and productivity alerts through `pyautogui`.
 
 ---
 
-## 🔒 Segurança e Privacidade
-* **Zero-Cloud Vision:** Todo o processamento de imagem da câmera é feito na RAM e descartado imediatamente.
-* **Kernel Lockdown:** Scripts automáticos para desativar o módulo `uvcvideo` quando a câmera não está em uso.
-* **Local Storage:** Memória e logs de temperamento armazenados localmente em bancos criptografados.
+## 🔒 Security & Privacy
+* **Zero-Cloud Vision:** All camera image processing is performed in RAM and discarded immediately. No images ever leave the local machine.
+* **Kernel Lockdown:** Automated scripts to disable the `uvcvideo` module when the camera is not actively in use by the system.
+* **Local Storage:** Memory and temperament logs are stored locally in encrypted databases.
 
 ---
 
-## 🚀 Roadmap de Desenvolvimento
-- [x] **Fase 0:** Definição da Arquitetura e QG Estratégico.
-- [ ] **Fase 1 (O Despertar):** Estrutura MCP base e loop de voz.
-- [ ] **Fase 2 (A Memória):** Implementação do banco vetorial ChromaDB.
-- [ ] **Fase 3 (O Olhar):** Integração de reconhecimento facial e emoções.
-- [ ] **Fase 4 (A Expansão):** Versão Android via .NET MAUI.
+## 🚀 Development Roadmap
+- [x] **Phase 0:** Architecture Definition & Strategic HQ.
+- [ ] **Phase 1 (The Awakening):** Base MCP structure and voice loop.
+- [ ] **Phase 2 (The Memory):** ChromaDB vector database implementation.
+- [ ] **Phase 3 (The Gaze):** Facial recognition and emotion integration.
+- [ ] **Phase 4 (The Expansion):** Android version via .NET MAUI.
 
 ---
 
-## ⚖️ Licença
-Este projeto é distribuído sob a **MIT License**. 
-> Tente suportar o sarcamo dela.
+## ⚖️ License
+Distributed under the **MIT License**.
+> Try to endure her sarcasm.
 
 ---
-*Desenvolvido por [Nyx0x](https://github.com/Nyx0x)* com muito café ☕️
+*Developed by [Nyx0x](https://github.com/Nyx0x) with a lot of coffee ☕️*
